@@ -16,7 +16,7 @@ function RestaurantsContainer({ restaurantData, fetchRestaurants }) {
     fetchRestaurants(city)
 
     axios
-    .get('http://opentable.herokuapp.com/api/cities')
+    .get('https://opentable.herokuapp.com/api/cities')
     .then(response => {
       setCities(response.data.cities)
     })
