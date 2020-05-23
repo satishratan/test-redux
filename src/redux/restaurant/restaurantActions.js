@@ -10,7 +10,7 @@ export const fetchRestaurants = (city) => {
   return (dispatch) => {
     dispatch(fetchRestaurantsRequest())
     axios
-      .get('http://opentable.herokuapp.com/api/restaurants?city=' + city)
+      .get('https://opentable.herokuapp.com/api/restaurants?city=' + city)
       .then(response => {
         const restaurants = response.data.restaurants
 
